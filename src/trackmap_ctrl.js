@@ -40,7 +40,7 @@ export class TrackMapCtrl extends MetricsPanelCtrl {
       maxDataPoints: 500,
       autoZoom: true,
       scrollWheelZoom: false,
-      defaultLayer: 'OpenStreetMap',
+      defaultLayer: 'GoogleSatellite',
       showLayerChanger: true,
       lineColor: 'red',
       pointColor: 'royalblue',
