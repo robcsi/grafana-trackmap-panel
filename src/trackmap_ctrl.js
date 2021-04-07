@@ -96,6 +96,10 @@ export class TrackMapCtrl extends MetricsPanelCtrl {
     // Global events
     this.dashboard.events.on(LegacyGraphHoverEvent.type, this.onPanelHover.bind(this), $scope);
     this.dashboard.events.on(LegacyGraphHoverClearEvent.type, this.onPanelClear.bind(this), $scope);
+
+    // this.imageUrl = 'http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg';
+    // this.imageBounds = [[46.913833, 17.680780], [46.91633, 17.690780]];
+    // this.imageoverlay = L.imageOverlay(this.imageUrl, this.imageBounds);
   }
 
   onRefresh(){
@@ -297,6 +301,9 @@ export class TrackMapCtrl extends MetricsPanelCtrl {
       overlay.setZIndex(e.layer.options.zIndex + 1);
       this.leafMap.forcedOverlay = overlay;
     }
+
+    // this.imageoverlay.addTo(this.leafMap);
+    // this.leafMap.fitBounds(this.imageBounds);
   }
 
   mapZoomToBox(e) {
