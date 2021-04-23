@@ -70,7 +70,7 @@ export class TrackMapCtrl extends MetricsPanelCtrl {
           subdomains:['mt0','mt1','mt2','mt3'],
           // This map doesn't have labels so we force a label-only layer on top of it
           forcedOverlay: L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.png', {
-              attribution: 'Labels by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'})
+              attribution: 'Labels by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://about.google/brand-resource-center/products-and-services/geo-guidelines/">Google Maps</a>'})
       })
     };
 
